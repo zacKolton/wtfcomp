@@ -104,8 +104,42 @@ input, select {
 /********************************************** MY CODE *************************************************/
 
 .header {
-  padding: 75px;
-  background: #C3BFBF;
-  color: white;
-  font-size: 30px;
+  height: 150px;
+  background: #707070;
+  position: relative;
+}
+
+.header h1 {
+    position: absolute;
+    top: 45%;
+    padding-left: 50px;
+    transform: translate(0, -50%);
+    font-size: 30px;
+    color: white;
+}
+
+.header p {
+    position: absolute;
+    top: 100px;
+    padding-left: 55px;
+    transform: translate(0, -50%);
+    font-size: 15px;
+    color: white;
+}
+
+.header .navBar {
+    position: absolute;
+    top: 45%;
+    transform: translate(0, -50%);
+    
+}
+
+.header .verticalLine {
+    border-left: 6px solid black;
+    height: 110px;
+    position: absolute;
+    left: 30%;
+    margin-left: -3px;
+    top: 20px;
+    bottom: 20px;
 }
