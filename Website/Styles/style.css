@@ -179,12 +179,16 @@ input, select {
     flex: 70%;
     background-color: white;
     padding: 20px;
+    position: relative;
+    background-color: #ff9;
 }
-
 
 .footer {
     background-color: #000;
+    position: fixed;
     height: 100px;
+    width: 100%;
+    bottom: 0px;
 }
 
 .footer h1 {
