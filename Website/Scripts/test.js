@@ -2,6 +2,8 @@ function funct(input) {
     console.log(input);
 }
 
+funct("hi");
+funct("hello");
 /*
           <p> Test input</p>
           <form id="form">
