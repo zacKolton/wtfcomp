@@ -175,8 +175,8 @@ input, select {
     height: 100%;
     width: calc(100% - 150px);
     left: 150px;
-    overflow: scroll;
-    padding-bottom: 150px;
+    overflow: visible;
+    padding-bottom: 200px;
 }
 
 .main h1 {
