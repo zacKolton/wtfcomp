@@ -240,6 +240,8 @@ footer {
     }
 }
 
+/*need to fix for iphone 12 pro max*/
+
 @media screen and (min-width: 415px) and (max-width: 768px)
 {
     header 
