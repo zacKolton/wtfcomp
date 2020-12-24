@@ -103,64 +103,58 @@ input, select {
 
 /********************************************** MY CODE *************************************************/
 
+
+
 * {
     box-sizing: border-box;
 }
 
-.header {
-  height: 150px;
+header {
+  height: 160px;
   background: #707070;
-  position: relative;
+  position: absolute;
+  width: 100%;
 }
 
-.header h1 {
-    position: absolute;
-    top: 45%;
-    padding-left: 50px;
-    transform: translate(0, -50%);
-    font-size: 30px;
-    color: white;
-}
-
-.header p {
-    position: absolute;
-    top: 100px;
-    padding-left: 55px;
-    transform: translate(0, -50%);
-    font-size: 15px;
-    color: white;
-}
-
-.header .verticalLine {
-    border-left: 6px solid black;
-    height: 110px;
-    position: absolute;
-    margin-left: -3px;
-    left: 250px;
-    top: 20px;
-    bottom: 20px;
-}
-
-.header .navBar {
-    position: absolute;
-    top: 45%;
-    left: 300px;
-    transform: translate(0, -50%);
-
-}
-
-.header .navBar a {
+header a img{
     float: left;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+}
+
+header .navBar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 90px);
+    justify-content: left;
+    gap: 10px 10px;
+    padding-top: 60px;
+    position: relative;
+}
+
+header .navBar button {
+    justify-self: center;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+header .navBar button:hover {
+    box-shadow: 0 5px 10px white;
+    font-weight: bold;
+    
+}
+
+header .navBar button a {
     display: block;
     color: white;
     text-align: center;
-    padding-right: 20px;
-    padding-left: 20px;
     text-decoration: none;
-}
-
-.header .navBar a:hover {
-    background-color: #000;
+    font-size: min(10vw, 15px);
 }
 
 .sideBar {
@@ -179,16 +173,124 @@ input, select {
     padding-bottom: 200px;
 }
 
-.main h1 {
-    text-align: center;
-    padding-right: 50px;
-    padding-left: 50px;
+main h1 {
+    padding-top: 160px;
 }
 
-.footer {
+footer {
     background-color: #000;
     position: fixed;
     height: 100px;
     width: 100%;
     bottom: 0px;
 }
+
+/* Landscape phones and down */
+@media screen and (max-width: 320px) 
+{
+    header 
+    {
+        height: 220px;
+    }
+
+    header a img
+    {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2px;
+        width: 100%;
+    }
+
+    header .navBar 
+    {
+        float: none;
+        justify-content: center;
+        padding-top: 0px;
+        grid-template-columns: repeat(auto-fit, 100px);
+        gap: 2px 5px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 414px)
+{
+    header 
+    {
+        height: 220px;
+    }
+
+    header a img
+    {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2px;
+        width: 100%;
+    }
+
+    header .navBar 
+    {
+        float: none;
+        justify-content: center;
+        padding-top: 0px;
+        grid-template-columns: repeat(auto-fit, 100px);
+        gap: 5px 15px;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px)
+{
+    header 
+    {
+        height: 150px;
+    }
+    header a img
+    {
+        float: left;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    header .navBar 
+    {
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, 90px);
+        gap: 5px 15px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 834px)
+{
+    header 
+    {
+        height: 150px;
+    }
+
+    header a img
+    {
+        float: left;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    header .navBar 
+    {
+        justify-content: left;
+        grid-template-columns: repeat(auto-fit, 120px);
+        gap: 5px 15px;
+        padding-top: 30px;
+    }
+}
+
+
+
+
