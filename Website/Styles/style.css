@@ -143,12 +143,6 @@ header .navBar button {
     width: 100%;
 }
 
-header .navBar button:hover {
-    box-shadow: 0 5px 10px white;
-    font-weight: bold;
-    
-}
-
 header .navBar button a {
     display: block;
     color: white;
@@ -157,25 +151,57 @@ header .navBar button a {
     font-size: min(10vw, 15px);
 }
 
-.sideBar {
-    background-color: #ff9;
-    position: absolute;
-    height: 100%;
-    width: 150px;
+header .navBar button:hover {
+    box-shadow: 0 5px 10px white;
+    font-weight: bold;
 }
 
-.main {
-    position: absolute;
-    height: 100%;
-    width: calc(100% - 150px);
-    left: 150px;
-    overflow: visible;
-    padding-bottom: 200px;
+main {
+    padding: 170px;
+}
+main .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 20px 20px;
+    justify-content: center;
 }
 
-main h1 {
-    padding-top: 160px;
+.grid .resource {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    background: black;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px grey;
 }
+
+.grid .resource .title {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.grid .resource .description {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.grid .resource button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.grid .resource button a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
 
 footer {
     background-color: #000;
@@ -190,7 +216,7 @@ footer {
 {
     header 
     {
-        height: 220px;
+        height: 230px;
     }
 
     header a img
@@ -217,7 +243,7 @@ footer {
 {
     header 
     {
-        height: 220px;
+        height: 230px;
     }
 
     header a img
