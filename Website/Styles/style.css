@@ -107,10 +107,10 @@ input, select {
 }
 
 header {
-  height: 160px;
+  width: 100%;
   background: #707070;
   position: absolute;
-  width: 100%;
+  
 }
 
 header a img{
@@ -154,7 +154,9 @@ button:hover {
 }
 
 main {
-    padding: 170px;
+    padding-top: 170px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 main .grid {
     display: grid;
@@ -206,10 +208,6 @@ main .grid {
     font-size: 15px;
 }
 
-
-
-
-
 footer {
     background-color: #000;
     position: fixed;
@@ -221,10 +219,6 @@ footer {
 /* Landscape phones and down */
 @media screen and (max-width: 320px) 
 {
-    header 
-    {
-        height: 230px;
-    }
 
     header a img
     {
@@ -241,18 +235,44 @@ footer {
         float: none;
         justify-content: center;
         padding-top: 0px;
+        grid-template-columns: repeat(auto-fit, 90px);
+        gap: 2px 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    main 
+    {
+        padding-top: 260px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    main .grid {
         grid-template-columns: repeat(auto-fit, 100px);
-        gap: 2px 6px;
+        gap: 10px 5px;
+    }
+
+    main .grid .resource
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    main .grid .resource .title {
+        font-size: 10px;
+    }
+
+    main .grid .resource .description {
+        font-size: 7px;
+    }
+
+    main .grid .resource button {
     }
 }
 
 @media screen and (min-width: 321px) and (max-width: 414px)
 {
-    header 
-    {
-        height: 230px;
-    }
-
     header a img
     {
         float: none;
@@ -277,10 +297,6 @@ footer {
 
 @media screen and (min-width: 415px) and (max-width: 768px)
 {
-    header 
-    {
-        height: 150px;
-    }
     header a img
     {
         float: left;
@@ -302,11 +318,6 @@ footer {
 
 @media screen and (min-width: 769px) and (max-width: 834px)
 {
-    header 
-    {
-        height: 150px;
-    }
-
     header a img
     {
         float: left;
