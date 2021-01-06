@@ -158,6 +158,12 @@ main {
     padding-left: 100px;
     padding-right: 100px;
 }
+
+main .pageName {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
 main .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, 250px);
@@ -216,7 +222,7 @@ footer {
     bottom: 0px;
 }
 
-/* Landscape phones and down */
+/* Iphone SE */
 @media screen and (max-width: 320px) 
 {
 
@@ -241,6 +247,7 @@ footer {
         margin-right: 5px;
         margin-bottom: 5px;
     }
+
     main 
     {
         padding-top: 260px;
@@ -271,6 +278,7 @@ footer {
     }
 }
 
+/* Iphone 8 */
 @media screen and (min-width: 321px) and (max-width: 414px)
 {
     header a img
@@ -295,6 +303,7 @@ footer {
 
 /*need to fix for iphone 12 pro max*/
 
+/* Iphone 8+ */
 @media screen and (min-width: 415px) and (max-width: 768px)
 {
     header a img
