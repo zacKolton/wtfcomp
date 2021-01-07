@@ -155,6 +155,7 @@ main .pageName
     text-align: center;
 }
 
+/*
 main .resourceGrid
 {
     display: grid;
@@ -204,7 +205,8 @@ main .resourceGrid .resource
     text-align: center;
 }
 
-/* Iphone SE */
+*/
+
 @media screen and (min-width: 500px) 
 {
 
