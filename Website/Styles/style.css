@@ -148,7 +148,6 @@ header .navBar button a
 .navBar button:hover
 {
     box-shadow: 0px 1px 5px 0.5px rgb(125, 175, 241);
-    font-weight: bold;
 }
 
 main .pageName 
@@ -188,8 +187,10 @@ main .resourceGrid .resource:hover {
     text-align: center;
     color: white;
     font-size: 12px;
-    padding-top: 5px;
-    padding-bottom: 2px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .resource .description
@@ -197,7 +198,9 @@ main .resourceGrid .resource:hover {
     text-align: center;
     color: white;
     font-size: 10px;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .resource button
@@ -205,6 +208,7 @@ main .resourceGrid .resource:hover {
     width: 30%;
     margin-left: 35%;
     margin-right: 35%;
+    padding-bottom: 5px;
 }
 
 .resource button a 
