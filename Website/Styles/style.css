@@ -354,7 +354,7 @@ main .resourceGrid .resource
         width: auto;
         justify-content: center;
         grid-template-columns: repeat(auto-fit, min(200px,30%));
-        gap: 10px 10px;
+        gap: 20px 20px;
         margin-left: 5%;
         margin-right: 5%;
     }
