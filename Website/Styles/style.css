@@ -295,9 +295,21 @@ main .resourceGrid .resource
         justify-content: left;
     }
 
+    .navBar .button a
+    {
+        font-size: 15px;
+    }
+
+
+    .resource .title
+    {
+        font-size: 15px;
+    }
+
     .resource .description
     {
         padding-bottom: 0;
+        font-size: 12px;
     }
 
     .resource button
@@ -331,13 +343,20 @@ main .resourceGrid .resource
         justify-content: left;
     }
 
+    header .navBar button a
+    {
+        font-size: 14px;
+    }
+
     main .resourceGrid
     {
         display: grid;
         width: auto;
         justify-content: center;
-        grid-template-columns: repeat(auto-fit, min(150px,25%));
+        grid-template-columns: repeat(auto-fit, min(200px,30%));
         gap: 10px 10px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     main .resourceGrid .resource
@@ -347,9 +366,15 @@ main .resourceGrid .resource
         border-radius: 10px;
     }
 
+    .resource .title
+    {
+        font-size: 15px;
+    }
+
     .resource .description
     {
         padding-bottom: 0;
+        font-size: 12px;
     }
 
     .resource button
