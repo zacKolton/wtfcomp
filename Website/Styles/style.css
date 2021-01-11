@@ -187,6 +187,11 @@ main .notice a
     color: white;
 }
 
+main .notice a:hover
+{
+    font-weight: bold;
+}
+
 main .resourceGrid
 {
     display: grid;
