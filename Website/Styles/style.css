@@ -176,6 +176,7 @@ main .resourceGrid .resource
     width: auto;
     border: none;
     border-radius: 10px;
+    position: relative;
 }
 
 main .resourceGrid .resource:hover {
@@ -198,7 +199,7 @@ main .resourceGrid .resource:hover {
     text-align: center;
     color: white;
     font-size: 10px;
-    padding-bottom: 5px;
+    margin-bottom: 25%;
     margin-left: 2px;
     margin-right: 2px;
 }
@@ -209,6 +210,8 @@ main .resourceGrid .resource:hover {
     margin-left: 35%;
     margin-right: 35%;
     padding-bottom: 5px;
+    position: absolute;
+    bottom: 0;
 }
 
 .resource button a 
