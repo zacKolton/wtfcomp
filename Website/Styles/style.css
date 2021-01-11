@@ -300,6 +300,13 @@ main .resourceGrid .resource
         font-size: 15px;
     }
 
+    main .resourceGrid
+    {
+
+        gap: 20px 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
     .resource .title
     {
