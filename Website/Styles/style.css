@@ -174,9 +174,9 @@ main .notice
     color: white;
     font-size: small;
     text-align: center;
-    width: 20%;
-    margin-left: 40%;
-    margin-right: 40%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
     padding-bottom: 10px;
     line-height: normal;
 }
