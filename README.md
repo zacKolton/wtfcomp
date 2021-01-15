@@ -1,2 +1,4 @@
 # wtfcomp
 Web Tools For comp
+
+WTFcomp stands for Web Tools For comp, computer science, that is. If you are like me, an average student in computer science, the phrase WTF may be a common one for you. It seemed fitting to name this site with, arguably, the most common phrase among all cs studnets. <br><br>Essentially WTFcomp is a compiled list of online tools that I have used throughout my entire degree for assignments and/or projects.<br><br>Eventually, it will be composed entirely of mini web apps, persay, for you to utilize locally on this website (rather than linking to multiple other websites). However, if I cannot recreate a tool, it will be left in the resources section.<br></br>Aside, this will also contain small tutorials explained in a simple and understandable manner, so that you do not have to search all over the internet to find them. 
