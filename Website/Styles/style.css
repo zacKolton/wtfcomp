@@ -181,9 +181,9 @@ main .notice
     color: white;
     font-size: small;
     text-align: center;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     padding-bottom: 10px;
     line-height: normal;
 }
@@ -222,20 +222,21 @@ main .resourceGrid .resource
 .resource .title 
 {
     text-align: center;
-    color: white;
-    font-size: 12px;
+    color: black;
+    font-size: 13px;
     font-weight: bold;
-    padding-top: 8px;
+    padding-top: 5px;
     padding-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
+    line-height: normal;
 }
 
 .resource .description
 {
     text-align: center;
-    color: white;
-    font-size: 10px;
+    color: black;
+    font-size: 11px;
     margin-bottom: 25%;
     padding-bottom: 10px;
     margin-left: 5px;
@@ -266,10 +267,51 @@ main .resourceGrid .resource
 {
     text-decoration: none;
     text-align: center;
-    font-size: 10px;
+    font-size: 11px;
     color: white;
     font-weight: bold;
 }
+
+.aboutInfo
+{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+    padding-bottom: 15px;
+}
+
+.aboutInfo .aboutCard
+{
+    display: block;
+    width: 100%;
+    background-color: rgb(125, 175, 241);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 0.5px rgb(125, 175, 241);
+    margin-bottom: 15px;
+}
+
+.aboutCard .aboutTitle p
+{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.aboutCard .aboutDescription p
+{
+    text-align: center;
+    font-size: 11px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
 
 @media screen and (min-width: 500px) and (max-width: 549px)
 {
@@ -389,6 +431,15 @@ main .resourceGrid .resource
         width: 30%;
         margin-left: 35%;
         margin-right: 35%;
+    }
+
+    main .aboutInfo
+    {
+        display: grid;
+        width: 80%;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, min(350px,50%));
+        gap: 20px 20px;
     }
     
 }
