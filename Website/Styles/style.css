@@ -162,6 +162,7 @@ header .navBar button a
 main
 {
     background-color: #000;
+    padding-bottom: 100%;
 }
 
 main .pageName 
